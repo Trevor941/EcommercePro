@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/products', [App\Http\Controllers\ProductsController::class, 'index']);
+Route::get('/detail/{id}', [App\Http\Controllers\ProductsController::class, 'detail']);
+Route::post('/add_to_cart', [App\Http\Controllers\ProductsController::class, 'addToCart']);
+Route::get('/cartlist', [App\Http\Controllers\ProductsController::class, 'cartList']);
+Route::get('/products/search/{search}', [App\Http\Controllers\ProductsController::class, 'search']);
