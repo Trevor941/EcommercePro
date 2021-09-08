@@ -25,3 +25,7 @@ Route::get('/detail/{id}', [App\Http\Controllers\ProductsController::class, 'det
 Route::post('/add_to_cart', [App\Http\Controllers\ProductsController::class, 'addToCart']);
 Route::get('/cartlist', [App\Http\Controllers\ProductsController::class, 'cartList']);
 Route::get('/products/search/{search}', [App\Http\Controllers\ProductsController::class, 'search']);
+Route::get('/removecart/{id}', [App\Http\Controllers\ProductsController::class, 'removeCart']);
+Route::get('/ordernow', [App\Http\Controllers\ProductsController::class, 'OrderNow']);
+Route::post('/orderplace', [App\Http\Controllers\ProductsController::class, 'orderplace']);
+Route::get('/myorders', [App\Http\Controllers\ProductsController::class, 'myorders']);

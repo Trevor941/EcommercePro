@@ -20,7 +20,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/products">Cart</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="/myorders">Cart</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
